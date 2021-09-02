@@ -1,20 +1,21 @@
 doctype html
 html
     head
+        link(rel='icon' type='image/png' href='images/logo.PNG')
+
         title= title
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
         nav.bg-white.shadow-lg
             .max-w-6xl.mx-auto.px-4
                 .flex.justify-between
-                    .flex.space-x-7
+                    .flex.space-x-10
                         div
                             a.flex.items-center.py-4.px-2(href='/')
                                 img.h-7.w-8.mr-2(src='images/logo.PNG' alt='Logo')
                                 span.font-semibold.text-gray-500.text-lg MegaVision
                         .hidden.items-center.space-x-1(class='md:flex')
-                            a.py-4.px-2.text-green-500.border-b-4.border-green-500.font-semibold(href='/') Home
-                            a.py-4.px-2.text-gray-500.font-semibold.transition.duration-300(href='/Productos' class='hover:text-green-500') Productos
+                            a.py-4.px-2.text-green-500.border-b-4.border-green-500.font-semibold(href='/') Productos
                             a.py-4.px-2.text-gray-500.font-semibold.transition.duration-300(href='/Servicios' class='hover:text-green-500') Servicios
                             a.py-4.px-2.text-gray-500.font-semibold.transition.duration-300(href='/QuienesSomos' class='hover:text-green-500') Quienes Somos
 
@@ -25,9 +26,7 @@ html
             .hidden.mobile-menu
                 ul
                     li.active
-                        a.block.text-sm.px-2.py-4.text-white.bg-green-500.font-semibold(href='/') Home
-                    li
-                        a.block.text-sm.px-2.py-4.transition.duration-300(href='/Productos' class='hover:bg-green-500') Services
+                        a.block.text-sm.px-2.py-4.text-white.bg-green-500.font-semibold(href='/') Services
                     li
                         a.block.text-sm.px-2.py-4.transition.duration-300(href='/Servicios' class='hover:bg-green-500') About
                     li

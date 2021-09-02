@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('quienesSomos', { title: 'Quienes Somos' });
+    res.render('quienesSomos', { title: 'Quienes Somos - MegaVision' });
 });
 
 module.exports = router;
