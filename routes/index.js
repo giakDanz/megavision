@@ -99,18 +99,18 @@ var productos = {
     productos: {
       diarios: {
         name: 'Diarios',
-        img: '',
+        img: 'images/lenteContacto.jpg',
         text: 'Son una opción saludable y conveniente, ya que se extraen y descartan al cabo de cada día y a la mañana' +
             ' siguiente se coloca un nuevo par en los ojos.'
       },
       colores: {
         name: 'Colores',
-        img: '',
+        img: 'images/contactoColores.jpg',
         text: 'Estos pueden tener o no medida y se usan solamente a fines estéticos para cambiar el color de los ojos.'
       },
       bifMulti: {
         name: 'Bifocales / Multifocales',
-        img: '',
+        img: 'images/contactoDiarios.jpg',
         text: 'Están diseñados con el fin de proporcionar una visión clara a todas las distancias para las personas que tienen presbicia.'
       }
     }

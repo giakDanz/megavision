@@ -1,12 +1,26 @@
+#Productos
 each tipo in productos
     if tipo.name == 'Premium'
         .text-yellow-500.text-8xl.font-semibold.text-center.p-4(class='md:text-xl lg:text-6xl')= tipo.name
     else
         .text-blue-400.text-8xl.font-semibold.text-center.p-4(class='md:text-xl lg:text-6xl')= tipo.name
     .flex.space-x-10.justify-center
+        - var index = 1
         each producto in tipo.productos
-            .max-w-md.py-4.px-8.bg-white.shadow-lg.rounded-lg.my-20
-                .flex.justify-center.-mt-16(class='md:justify-end')
-                div
-                    h2.text-gray-800.text-3xl.font-semibold= producto.name
-                    .mt-2.text-gray-600=  producto.text
+            div(x-data='{ showModal' + index + ': false }')
+                a(@click='showModal' + index + ' = !showModal' + index class='focus:outline-none focus:ring-0 hover:bg-gray-50 focus:bg-indigo-50 focus:text-indigo')
+                    .max-w-md.py-4.px-8.bg-white.shadow-lg.rounded-lg.my-20
+                        .flex.justify-center.-mt-16(class='md:justify-end')
+                        div
+                            h2.text-gray-800.text-3xl.font-semibold= producto.name
+                            img.h-48.w-48.rounded-none.mx-auto(src=producto.img)
+
+
+                            .fixed.text-gray-500.flex.items-center.justify-center.overflow-auto.z-50.bg-black.bg-opacity-40.left-0.right-0.top-0.bottom-0(x-show='showModal' + index x-transition:enter='transition ease duration-300' x-transition:enter-start='opacity-0' x-transition:enter-end='opacity-100' x-transition:leave='transition ease duration-300' x-transition:leave-start='opacity-100' x-transition:leave-end='opacity-0')
+                                // Modal
+                                .bg-white.rounded-xl.shadow-2xl.p-6.mx-10(x-show='showModal' + index class='sm:w-10/12' @click.away='showModal' + index + ' = false' x-transition:enter='transition ease duration-100 transform' x-transition:enter-start='opacity-0 scale-90 translate-y-1' x-transition:enter-end='opacity-100 scale-100 translate-y-0' x-transition:leave='transition ease duration-100 transform' x-transition:leave-start='opacity-100 scale-100 translate-y-0' x-transition:leave-end='opacity-0 scale-90 translate-y-1')
+                                    // Title
+                                    span.font-bold.block.text-2xl.mb-3.text-center=  producto.name
+                                    // Some beer 🍺
+                                    p.mb-5.text-center= producto.text
+                                    - index = index +1
