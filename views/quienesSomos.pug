@@ -1,34 +1,41 @@
-extends layout
+//extends layout
 
-block content
-    p.text-blue-500.text-2xl.font-bold.p-4(class='md:text-3xl lg:text-4xl') #{title}
+//block content
 
-    .grid.grid-cols-3.gap-4
-        div
-            p.text-blue-400.text-2xl.font-bold.p-4(class='md:text-xl lg:text-2xl') Misión
-            p.ml-4 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-
-
-            p.text-blue-400.text-2xl.font-bold.p-4(class='md:text-xl lg:text-2xl') Visión
-            p.ml-4 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-
-
-            br
-            p.text-blue-400.text-2xl.font-bold.p-4(class='md:text-xl lg:text-2xl') Staff de Profesionales
-
-            p.text-blue-400.text-2xl.font-bold.ml-4.mt-4(class='md:text-base lg:text-lg') Staff de Oftalmología
-            ul
-                li.ml-4.font-semibold Dr. Jorge Enrique Escobedo
-                span.ml-4 C. M. P. Nº 25231 y de especialización en oftalmología Nº 22202.
-
-                li.ml-4.mt-4.font-semibold Dra. Tania Valderrama Atayupanqui
-                span.ml-4 C. M. P. Nº 28526 - RNE14402, especialista en cirugía corneal, anillos instraestromale
+.grid.grid-cols-3.gap-4
+    div
+        p.text-blue-400.text-2xl.font-bold.p-4(class='md:text-xl lg:text-2xl') Misión
+        p.ml-4 It is a long established fact that a reader will be distracted by the readable content of a page when
+            | looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+            | of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+            | and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
 
 
-            p.text-blue-400.text-2xl.font-bold.ml-4.mt-4(class='md:text-base lg:text-lg') Staff de Optometría
-            ul
-                li.ml-4.font-semibold Jeremy Gutierrez Carrión & Myker Yefrey Leal
+        p.text-blue-400.text-2xl.font-bold.p-4(class='md:text-xl lg:text-2xl') Visión
+        p.ml-4 It is a long established fact that a reader will be distracted by the readable
+            | content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            | distribution of letters, as opposed to using 'Content here, content here', making it look like
+            | readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+            | default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
 
-        div.col-start-2.col-span-2
-            iframe.w-full.h-full(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.3546466029462!2d-77.08059107677332!3d-12.08347062461444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c974b8d3bc65%3A0xfdfb83f2a6ca55e1!2sEnriquez%20134%2C%20San%20Miguel%2015086!5e0!3m2!1sen!2spe!4v1629993752661!5m2!1sen!2spe' style='border:0;' allowfullscreen='' loading='lazy')
+
+        br
+        p.text-blue-400.text-2xl.font-bold.p-4(class='md:text-xl lg:text-2xl') Staff de Profesionales
+
+        p.text-blue-400.text-2xl.font-bold.ml-4.mt-4(class='md:text-base lg:text-lg') Staff de Oftalmología
+        ul
+            li.ml-4.font-semibold Dr. Jorge Enrique Escobedo
+            span.ml-4 C. M. P. Nº 25231 y de especialización en oftalmología Nº 22202.
+
+            li.ml-4.mt-4.font-semibold Dra. Tania Valderrama Atayupanqui
+            span.ml-4 C. M. P. Nº 28526 - RNE14402, especialista en cirugía corneal, anillos instraestromale
+
+
+        p.text-blue-400.text-2xl.font-bold.ml-4.mt-4(class='md:text-base lg:text-lg') Staff de Optometría
+        ul
+            li.ml-4.font-semibold Jeremy Gutierrez Carrión & Myker Yefrey Leal
+
+    div.col-start-2.col-span-2
+        iframe.w-full.h-full(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.3546466029462!2d-77.08059107677332!3d-12.08347062461444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c974b8d3bc65%3A0xfdfb83f2a6ca55e1!2sEnriquez%20134%2C%20San%20Miguel%2015086!5e0!3m2!1sen!2spe!4v1629993752661!5m2!1sen!2spe' style='border:0;' allowfullscreen='' loading='lazy')
 

@@ -4,7 +4,7 @@ var router = express.Router();
 var componentes = {
     consulta:{
         name: 'CONSULTA',
-        image: 'images/consulta-oftalmologia-general-II-.jpg',
+        image: 'images/examenes-oftalmologicos.png',
         text: 'Consiste en la evaluación integral de los ojos, por el Optometrista y/u Oftalmólogo que ' +
         'tienecomo finalidad la prevención, detección y posterior tratamiento de patologías que se podrían encontrar.'
     },
@@ -16,7 +16,7 @@ var componentes = {
     },
     personalTecnico:{
         name: 'PERSONAL TECNICO',
-        image: 'images/personal.jpg',
+        image: 'images/LOGO.png',
         text: 'Atención personalizada y preferente por consultores ópticos que ofrecen atenciónesmerada,' +
         ' absolviendo cualquier consulta técnica sobre los productos, recomendando lo más apropiado a cada necesidad,' +
         ' gusto y fisonomía de cada persona.'
@@ -29,7 +29,7 @@ var componentes = {
     },
     despistaje:{
         name: 'DESPISTAJE',
-        image: 'images/examenes-oftalmologicos.png',
+        image: 'images/consulta-oftalmologia-general-II-.jpg',
         text: 'Para los trabajadores de la empresa y sus familiares ensus propias sedes en campañas corporativas' +
         ' o en consultorio de nuestro Centro.'
     }

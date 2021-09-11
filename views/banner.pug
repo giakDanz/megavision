@@ -1,0 +1,29 @@
+.slideshow-container
+    // Full-width images with number and caption text
+    .mySlides.fade
+        .numbertext 1 / 4
+        img(src='images/banner1.jpg' style='width:100%')
+        .text Caption Text
+    .mySlides.fade
+        .numbertext 2 / 4
+        img(src='images/banner2.jpg' style='width:100%')
+        .text Caption Two
+    .mySlides.fade
+        .numbertext 3 / 4
+        img(src='images/banner3.jpg' style='width:100%')
+        .text Caption Three
+    .mySlides.fade
+        .numbertext 4 / 4
+        img(src='images/banner4.jpg' style='width:100%')
+        .text Caption Three
+    // Next and previous buttons
+    a.prev(onclick='plusSlides(-1)') ❮
+    a.next(onclick='plusSlides(1)') ❯
+br
+// The dots/circles
+div(style='text-align:center')
+    span.dot(onclick='currentSlide(1)')
+    span.dot(onclick='currentSlide(2)')
+    span.dot(onclick='currentSlide(3)')
+    span.dot(onclick='currentSlide(4)')
+
