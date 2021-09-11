@@ -35,11 +35,94 @@ var componentes = {
   }
 }
 
+var productos = {
+  lentesDeMontura: {
+    name: 'Lentes de Montura',
+    productos: {
+      monofocales: {
+        name: 'Monofocales',
+        img: 'images/monofocales.jpg',
+        text: 'Son aquellos que tienen la misma graduación en toda la superficie. Con ellas se puede corregir' +
+            ' cualquier error refractivo o ametropía como la miopía, hipermetropía, astigmatismo o prescibicia.' +
+            ' El diseñoo tallado de una lente monfocal depende del efecto refractivo que quiera corregir.'
+      },
+      bifocales: {
+        name: 'Bifocales',
+        img: 'images/bifocales.jpg',
+        text: 'Son aquellas que tienen dos graduaciones diferentes para permitir a la persona corregir errores o' +
+            ' defectos refractivos en la visión de lejos y de cerca. Las lentes bifocales se crearon para compensar' +
+            ' errores refractivos diferentes como por ejemplo la presbicia, miopía e hipermetrofía más astigmatismo.'
+      },
+      progresivos: {
+        name: 'Progresivos',
+        img: 'images/progresivos.jpg',
+        text: 'Tienen una graduación progresiva de cerca a lejos, sin embargo, no son todos iguales, ya que hay' +
+            ' productos de corrección más avanzados y otros más básicos'
+      }
+    }
+  },
+  premium: {
+    name: 'Premium',
+    productos: {
+      altaGama: {
+        name: 'Alta Gama Personalizada',
+        img: 'images/logo.png',
+        text: 'Son aquellas que tienen dos graduaciones diferentes para permitir a la persona corregir errores o' +
+            ' defectos refractivos en la visión de lejos y de cerca. Las lentes bifocales se crearon para compensar' +
+            ' errores refractivos diferentes como por ejemplo la presbicia, miopía e hipermetrofía más astigmatismo.'
+      },
+      tension: {
+        name: 'Tension',
+        img: 'images/tension.jpg',
+        text: 'Son aquellas que tienen dos graduaciones diferentes para permitir a la persona corregir errores o' +
+            ' defectos refractivos en la visión de lejos y de cerca. Las lentes bifocales se crearon para compensar' +
+            ' errores refractivos diferentes como por ejemplo la presbicia, miopía e hipermetrofía más astigmatismo.'
+      },
+      antireflejo: {
+        name: 'Antireflejo',
+        img: 'images/antireflejo.jpg',
+        text: 'Son aquellas que tienen dos graduaciones diferentes para permitir a la persona corregir errores o' +
+            ' defectos refractivos en la visión de lejos y de cerca. Las lentes bifocales se crearon para compensar' +
+            ' errores refractivos diferentes como por ejemplo la presbicia, miopía e hipermetrofía más astigmatismo.'
+      },
+      luzAzul: {
+        name: 'Luz Azul',
+        img: 'images/luz azul.jpg',
+        text: 'Son aquellas que tienen dos graduaciones diferentes para permitir a la persona corregir errores o' +
+            ' defectos refractivos en la visión de lejos y de cerca. Las lentes bifocales se crearon para compensar' +
+            ' errores refractivos diferentes como por ejemplo la presbicia, miopía e hipermetrofía más astigmatismo.'
+      }
+    }
+  },
+  lentesDeContacto: {
+    name: 'Lentes de Contacto',
+    productos: {
+      diarios: {
+        name: 'Diarios',
+        img: '',
+        text: 'Son una opción saludable y conveniente, ya que se extraen y descartan al cabo de cada día y a la mañana' +
+            ' siguiente se coloca un nuevo par en los ojos.'
+      },
+      colores: {
+        name: 'Colores',
+        img: '',
+        text: 'Estos pueden tener o no medida y se usan solamente a fines estéticos para cambiar el color de los ojos.'
+      },
+      bifMulti: {
+        name: 'Bifocales / Multifocales',
+        img: '',
+        text: 'Están diseñados con el fin de proporcionar una visión clara a todas las distancias para las personas que tienen presbicia.'
+      }
+    }
+  }
+}
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Productos - MegaVision',
-    componentes: componentes });
+    componentes: componentes,
+    productos: productos});
 });
 
 module.exports = router;
